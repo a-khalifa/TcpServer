@@ -1,18 +1,18 @@
 package actors
 
 import actors.Messages.StopMessage
-import actors.patterns.ProductionReaper
-import akka.actor.{Actor, PoisonPill, Props}
+import actors.patterns.MainReaper
+import akka.actor.{Actor, ActorLogging, PoisonPill, Props}
 
 /**
   * Created by Ahmed on 4/18/17.
   */
-class RootActor extends Actor{
+class RootActor extends Actor with ActorLogging{
   import context._
 
   import scala.concurrent.duration._
 
-  val reaper = context.actorOf(Props[ProductionReaper], "reaper")
+  val reaper = context.actorOf(Props[MainReaper], "reaper")
   val systemPropertiesActor = context.actorOf(Props[SystemPropertiesActor], "systemPropertiesActor")
   val controllerActor = context.actorOf(Props[ControllerActor], "controllerActor")
 
@@ -22,11 +22,11 @@ class RootActor extends Actor{
 
   override def receive = {
     case StopMessage =>
-      println(self.path.toString + " Stop")
-      systemPropertiesActor ! StopMessage
+      log.info("Going to Stop")
+      systemPropertiesActor ! PoisonPill
       controllerActor ! StopMessage
       context stop self
-    case _ => println("Unsupported Message")
+    case _ => log.error("Unsupported Message")
   }
 
 }

@@ -25,12 +25,12 @@ class ControllerActor extends WatchedActor{
       println(self.path.toString + " StopMessage")
       serversMap.values.foreach(_ ! StopMessage)
       context stop self
-    case _ => println("Unsupported Message")
+    case _ => log.error("Unsupported Message")
   }
 
 
   def refreshServersMap () = {
-    println("Retrieved Refresh Message")
+    log.info("Retrieved Refresh Message")
     context.system.scheduler.scheduleOnce(1000 millis, self, RefreshMessage)
   };
 

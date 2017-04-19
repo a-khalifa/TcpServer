@@ -23,7 +23,7 @@ class ServerActor(port: Int) extends WatchedActor {
 
   def receive = {
     case b @ Bound(localAddress) =>
-      println(s"Connected to Port: $port")
+      log.info(s"Connected to Port: $port")
 
     case CommandFailed(_: Bind) => context stop self
 
@@ -33,7 +33,7 @@ class ServerActor(port: Int) extends WatchedActor {
       connection ! Register(handler)
 
     case StopMessage =>
-      println(self.path.toString + " StopMessage")
+      log.info(" StopMessage")
       context stop self
   }
 
