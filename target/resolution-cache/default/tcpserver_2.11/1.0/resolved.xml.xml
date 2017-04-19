@@ -4,7 +4,7 @@
 		module="tcpserver_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20170418222714"
+		publication="20170419091326"
 	>
 		<description>
 		TcpServer
@@ -36,5 +36,6 @@
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.8" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="com.typesafe.akka" name="akka-actor_2.11" rev="2.5.0" conf="compile->default(compile)"/>
 		<dependency org="org.yaml" name="snakeyaml" rev="1.17" conf="compile->default(compile)"/>
+		<dependency org="org.hibernate" name="hibernate-c3p0" rev="4.3.4.Final" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

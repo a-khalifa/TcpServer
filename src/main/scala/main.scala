@@ -6,5 +6,5 @@ import akka.actor.{ActorSystem, PoisonPill, Props}
   */
 object main extends App{
   val system = ActorSystem("tcp_server")
-  val serverActor = system.actorOf(Props[RootActor], "rootActor")
+  val serverActor = system.actorOf(Props[RootActor], "root")
 }

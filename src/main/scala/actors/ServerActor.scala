@@ -6,6 +6,7 @@ import akka.util.ByteString
 import java.net.InetSocketAddress
 
 import actors.Messages.StopMessage
+import actors.patterns.WatchedActor
 
 
 
@@ -13,7 +14,7 @@ object ServerActor{
   def props(port: Int) = Props(new ServerActor(port))
 }
 
-class ServerActor(port: Int) extends Actor {
+class ServerActor(port: Int) extends WatchedActor {
 
   import Tcp._
   import context.system

@@ -1,4 +1,4 @@
-[info] Updating {file:/Users/apple/IdeaProjects/TcpServer/project/}tcpserver-build...
+[info] Updating {file:/D:/Investigations/TcpServer/project/}tcpserver-build...
 [debug] :: resolving dependencies :: default#tcpserver-build;0.1-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -359,11 +359,31 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [info] Resolving jline#jline;2.13 ...
 [debug] sbt-chain: Checking cache for: dependency: jline#jline;2.13 {compile=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: jline#jline;2.13
-[debug] 	found jline#jline;2.13 in sbt-chain
+[info] Resolving jline#jline;2.13 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: jline#jline;2.13 {compile=[default(compile)]}
+[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/jline/jline/2.13/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/jline/jline/2.13/ivys/ivy.xml
+[debug] 	typesafe-ivy-releases: no ivy file found for jline#jline;2.13
+[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/jline/jline/2.13/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/jline/jline/2.13/ivys/ivy.xml
+[debug] 	sbt-plugin-releases: no ivy file found for jline#jline;2.13
+[debug] 		tried C:\Users\ahmed.khalifa\.ivy2\local\jline\jline\2.13\ivys\ivy.xml
+[debug] 	local: no ivy file found for jline#jline;2.13
+[debug] 		tried https://repo1.maven.org/maven2/jline/jline/2.13/jline-2.13.pom
+[debug] 	public: found md file for jline#jline;2.13
+[debug] 		=> https://repo1.maven.org/maven2/jline/jline/2.13/jline-2.13.pom (2.13)
+[debug] downloading https://repo1.maven.org/maven2/jline/jline/2.13/jline-2.13.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/jline/jline/2.13/jline-2.13.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/jline/jline/2.13/jline-2.13.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/jline/jline/2.13/jline-2.13.pom
+[debug] 	[SUCCESSFUL ] jline#jline;2.13!jline.pom(pom.original) (486ms)
+[info] Resolving org.sonatype.oss#oss-parent;9 ...
+[debug] sbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;9 {}
+[debug] sbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;9
+[debug] 	found jline#jline;2.13 in public
 [debug] == resolving dependencies org.scala-sbt#completion;0.13.13->jline#jline;2.13 [compile->runtime]
 [debug] == resolving dependencies org.scala-sbt#completion;0.13.13->jline#jline;2.13 [compile->compile]
-[debug] == resolving dependencies jline#jline;2.13->org.fusesource.jansi#jansi;1.11 [compile->master(*)]
+[debug] == resolving dependencies jline#jline;2.13->org.fusesource.jansi#jansi;1.11 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}
@@ -375,7 +395,7 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [info] Resolving org.fusesource.jansi#jansi;1.11 ...
-[debug] sbt-chain: Checking cache for: dependency: org.fusesource.jansi#jansi;1.11 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[debug] sbt-chain: Checking cache for: dependency: org.fusesource.jansi#jansi;1.11 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.11
 [debug] 	found org.fusesource.jansi#jansi;1.11 in sbt-chain
 [debug] == resolving dependencies jline#jline;2.13->org.fusesource.jansi#jansi;1.11 [compile->compile(*)]
@@ -2212,7 +2232,7 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] == resolving dependencies org.scala-sbt#completion;0.13.13->jline#jline;2.13 [compile->runtime]
 [debug] == resolving dependencies org.scala-sbt#completion;0.13.13->jline#jline;2.13 [compile->compile]
-[debug] == resolving dependencies jline#jline;2.13->org.fusesource.jansi#jansi;1.11 [compile->master(*)]
+[debug] == resolving dependencies jline#jline;2.13->org.fusesource.jansi#jansi;1.11 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}
@@ -4184,7 +4204,7 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] == resolving dependencies org.scala-sbt#completion;0.13.13->jline#jline;2.13 [compile->runtime]
 [debug] == resolving dependencies org.scala-sbt#completion;0.13.13->jline#jline;2.13 [compile->compile]
-[debug] == resolving dependencies jline#jline;2.13->org.fusesource.jansi#jansi;1.11 [compile->master(*)]
+[debug] == resolving dependencies jline#jline;2.13->org.fusesource.jansi#jansi;1.11 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}
@@ -6074,19 +6094,19 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.6!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 2657ms :: artifacts dl 117ms
-[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT compile produced in /Users/apple/IdeaProjects/TcpServer/project/target/resolution-cache/reports/default-tcpserver-build-compile.xml
-[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT runtime produced in /Users/apple/IdeaProjects/TcpServer/project/target/resolution-cache/reports/default-tcpserver-build-runtime.xml
-[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT test produced in /Users/apple/IdeaProjects/TcpServer/project/target/resolution-cache/reports/default-tcpserver-build-test.xml
-[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT provided produced in /Users/apple/IdeaProjects/TcpServer/project/target/resolution-cache/reports/default-tcpserver-build-provided.xml
-[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT optional produced in /Users/apple/IdeaProjects/TcpServer/project/target/resolution-cache/reports/default-tcpserver-build-optional.xml
-[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT compile-internal produced in /Users/apple/IdeaProjects/TcpServer/project/target/resolution-cache/reports/default-tcpserver-build-compile-internal.xml
-[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT runtime-internal produced in /Users/apple/IdeaProjects/TcpServer/project/target/resolution-cache/reports/default-tcpserver-build-runtime-internal.xml
-[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT test-internal produced in /Users/apple/IdeaProjects/TcpServer/project/target/resolution-cache/reports/default-tcpserver-build-test-internal.xml
-[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT plugin produced in /Users/apple/IdeaProjects/TcpServer/project/target/resolution-cache/reports/default-tcpserver-build-plugin.xml
-[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT sources produced in /Users/apple/IdeaProjects/TcpServer/project/target/resolution-cache/reports/default-tcpserver-build-sources.xml
-[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT docs produced in /Users/apple/IdeaProjects/TcpServer/project/target/resolution-cache/reports/default-tcpserver-build-docs.xml
-[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT pom produced in /Users/apple/IdeaProjects/TcpServer/project/target/resolution-cache/reports/default-tcpserver-build-pom.xml
-[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT scala-tool produced in /Users/apple/IdeaProjects/TcpServer/project/target/resolution-cache/reports/default-tcpserver-build-scala-tool.xml
-[debug] 	resolve done (2657ms resolve - 117ms download)
+[debug] :: resolution report :: resolve 8201ms :: artifacts dl 595ms
+[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT compile produced in D:\Investigations\TcpServer\project\target\resolution-cache\reports\default-tcpserver-build-compile.xml
+[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT runtime produced in D:\Investigations\TcpServer\project\target\resolution-cache\reports\default-tcpserver-build-runtime.xml
+[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT test produced in D:\Investigations\TcpServer\project\target\resolution-cache\reports\default-tcpserver-build-test.xml
+[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT provided produced in D:\Investigations\TcpServer\project\target\resolution-cache\reports\default-tcpserver-build-provided.xml
+[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT optional produced in D:\Investigations\TcpServer\project\target\resolution-cache\reports\default-tcpserver-build-optional.xml
+[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT compile-internal produced in D:\Investigations\TcpServer\project\target\resolution-cache\reports\default-tcpserver-build-compile-internal.xml
+[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT runtime-internal produced in D:\Investigations\TcpServer\project\target\resolution-cache\reports\default-tcpserver-build-runtime-internal.xml
+[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT test-internal produced in D:\Investigations\TcpServer\project\target\resolution-cache\reports\default-tcpserver-build-test-internal.xml
+[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT plugin produced in D:\Investigations\TcpServer\project\target\resolution-cache\reports\default-tcpserver-build-plugin.xml
+[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT sources produced in D:\Investigations\TcpServer\project\target\resolution-cache\reports\default-tcpserver-build-sources.xml
+[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT docs produced in D:\Investigations\TcpServer\project\target\resolution-cache\reports\default-tcpserver-build-docs.xml
+[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT pom produced in D:\Investigations\TcpServer\project\target\resolution-cache\reports\default-tcpserver-build-pom.xml
+[debug] 	report for default#tcpserver-build;0.1-SNAPSHOT scala-tool produced in D:\Investigations\TcpServer\project\target\resolution-cache\reports\default-tcpserver-build-scala-tool.xml
+[debug] 	resolve done (8201ms resolve - 595ms download)
 [info] Done updating.

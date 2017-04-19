@@ -2,6 +2,7 @@ package actors
 
 import actors.ControllerActor.RefreshMessage
 import actors.Messages.StopMessage
+import actors.patterns.WatchedActor
 import akka.actor.{Actor, ActorRef, PoisonPill}
 
 import scala.concurrent.duration._
@@ -10,7 +11,7 @@ object ControllerActor{
   case class RefreshMessage();
 }
 
-class ControllerActor extends Actor{
+class ControllerActor extends WatchedActor{
   import context._
   val serversMap : Map[Int, ActorRef] = Map()
 

@@ -1,6 +1,7 @@
 package actors
 
 import actors.Messages.StopMessage
+import actors.patterns.ProductionReaper
 import akka.actor.{Actor, PoisonPill, Props}
 
 /**
@@ -11,7 +12,7 @@ class RootActor extends Actor{
 
   import scala.concurrent.duration._
 
-
+  val reaper = context.actorOf(Props[ProductionReaper], "reaper")
   val systemPropertiesActor = context.actorOf(Props[SystemPropertiesActor], "systemPropertiesActor")
   val controllerActor = context.actorOf(Props[ControllerActor], "controllerActor")
 
