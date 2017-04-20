@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170419201243"/>
+		date="20170419215558"/>
 	<dependencies>
 		<module organisation="com.typesafe.akka" name="akka-actor_2.11">
 			<revision name="2.5.0" status="release" pubdate="20170412171627" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
@@ -75,7 +75,7 @@
 				<metadata-artifact status="no" details="" size="2699" time="0" location="/Users/apple/.ivy2/cache/c3p0/c3p0/ivy-0.9.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.pom"/>
 				<caller organisation="default" name="tcpserver$sources_2.11" conf="compile, runtime-internal, runtime, optional" rev="0.9.1.2" rev-constraint-default="0.9.1.2" rev-constraint-dynamic="0.9.1.2" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="c3p0" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="461040" time="14174" location="/Users/apple/.ivy2/cache/c3p0/c3p0/srcs/c3p0-0.9.1.2-sources.jar">
+					<artifact name="c3p0" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="461040" time="0" location="/Users/apple/.ivy2/cache/c3p0/c3p0/srcs/c3p0-0.9.1.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2-sources.jar"/>
 					</artifact>
 				</artifacts>

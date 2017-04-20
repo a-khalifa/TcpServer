@@ -23,7 +23,6 @@
 [debug] 	[2.10.6] org.scala-lang#scala-library;2.10.6
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.13->org.scala-lang#scala-library;2.10.6 [compile->runtime]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.13->org.scala-lang#scala-library;2.10.6 [compile->compile]
-[debug] no default cache defined: set to /Users/apple/.ivy2/cache
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.13->org.scala-lang#scala-library;2.10.6 [compile->master]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.13->org.scala-sbt#main;0.13.13 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}
@@ -1775,9 +1774,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.13!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
-[debug] :: resolution report :: resolve 771ms :: artifacts dl 30ms
+[debug] :: resolution report :: resolve 1042ms :: artifacts dl 47ms
 [debug] 	report for default#tcpserver$sbt_2.10;1.0 default produced in /Users/apple/IdeaProjects/TcpServer/target/resolution-cache/reports/default-tcpserver$sbt_2.10-default.xml
-[debug] 	resolve done (771ms resolve - 30ms download)
+[debug] 	resolve done (1042ms resolve - 47ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#tcpserver$sources_2.10;1.0
 [debug] 	confs: [default]
@@ -2471,6 +2470,6 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.6!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#interface;0.13.13!interface.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#logging;0.13.13!logging.jar(src)
-[debug] :: resolution report :: resolve 541ms :: artifacts dl 137ms
+[debug] :: resolution report :: resolve 272ms :: artifacts dl 39ms
 [debug] 	report for default#tcpserver$sources_2.10;1.0 default produced in /Users/apple/IdeaProjects/TcpServer/target/resolution-cache/reports/default-tcpserver$sources_2.10-default.xml
-[debug] 	resolve done (541ms resolve - 137ms download)
+[debug] 	resolve done (272ms resolve - 39ms download)

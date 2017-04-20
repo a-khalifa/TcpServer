@@ -4,7 +4,7 @@
 		module="tcpserver$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20170419201243"
+		publication="20170419215557"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
